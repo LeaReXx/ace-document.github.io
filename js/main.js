@@ -1,6 +1,7 @@
 let humbugger = document.querySelector(".humbugger");
 let rightMenu = document.querySelector(".right-menu");
 let rightNavItems = document.querySelectorAll(".right-nav");
+let contentPages = document.querySelectorAll('content-pages')
 
 humbugger.addEventListener("click", () => {
   console.log("clicked");
