@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  direction: rtl;
+}
+
+:root {
+  --main-color: #91ea57;
+  --color-1: #2c3639;
+  --color-2: #3f4e4f;
+  --color-3: #dcd7c9;
+}
+
+body {
+  font-family: "IRANsans", Arial, Helvetica, sans-serif !important;
+  background: rgb(217, 217, 217);
+  background: linear-gradient(
+    148deg,
+    rgba(217, 217, 217, 1) 32%,
+    rgba(119, 201, 64, 0.6699054621848739) 100%
+  );
+  height: 100%;
+  background-image: url(/imgs/header.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+.main-content {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    -20deg,
+    rgba(217, 217, 217, 0.3) 5%,
+    rgba(132, 212, 78, 0.6) 100%
+  );
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 300px;
+}
+
+/* humbugger icon for mobile  */
+.humbugger,
+.close-mobile-menu,
+.nav-item {
+  cursor: pointer;
+}
+
+.humbugger span {
+  margin: 3px 0;
+  width: 30px;
+  height: 3px;
+}
+
+.left-menu {
+  display: none;
+}
