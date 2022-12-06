@@ -74,7 +74,7 @@ body {
 }
 
 .right-menu-logo-parent img {
-  width: 70%;
+  width: 80%;
 }
 
 .right-nav-ul li {
@@ -88,7 +88,6 @@ body {
   padding-right: 0.2rem;
 }
 
-
 .content-pages {
   display: none;
   padding-top: 2rem;
@@ -101,7 +100,7 @@ body {
 @media screen and (min-width: 992px) {
   .right-menu {
     all: unset;
-    width: 300px;
+    width: 320px;
     display: block;
     border-radius: 15px;
     background-color: rgba(201, 255, 164, 0.4);
