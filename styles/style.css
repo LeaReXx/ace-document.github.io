@@ -43,6 +43,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* humbugger icon for mobile  */
@@ -58,6 +59,33 @@ body {
   height: 3px;
 }
 
-.left-menu {
-  display: none;
+.right-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.2);
+
+  background: linear-gradient(
+    -20deg,
+    rgba(217, 217, 217, 0.6) 10%,
+    rgba(132, 212, 78, 0.6) 80%
+  );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+  transform: translateX(500px);
+}
+
+.right-menu.active {
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.right-menu-logo-parent img {
+  width: 70%;
 }
