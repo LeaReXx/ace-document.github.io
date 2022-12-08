@@ -24,6 +24,11 @@ body {
   background-color: hsla(0, 0%, 0%, 0.2);
 }
 
+img {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .main-content {
   min-height: 550px;
   height: auto;
