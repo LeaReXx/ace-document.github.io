@@ -17,11 +17,11 @@ body {
   font-family: "IRANsans", Arial, Helvetica, sans-serif !important;
   color: #252935;
   height: 100%;
-  background-image: url(/imgs/header.jpeg);
+  background-image: url(/imgs/background.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: hsla(0, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 img {
@@ -164,7 +164,7 @@ p {
     -webkit-backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: sticky;
-    top: 20px;
+    top: 50px;
     max-height: 80vh;
   }
 
