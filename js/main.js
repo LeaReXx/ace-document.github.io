@@ -3,9 +3,15 @@ let rightMenu = document.querySelector(".right-menu");
 let rightNavItems = document.querySelectorAll(".right-nav");
 let contentPages = document.querySelectorAll(".content-pages");
 
+window.onload = () => {
+  let locHash = location.hash.toLowerCase();
+  if (locHash) {
+    activePages(locHash);
+  }
+};
+
 humbugger.addEventListener("click", () => {
-  console.log("clicked");
-  console.log(rightMenu);
+
   rightMenu.classList.add("active");
 });
 
@@ -22,11 +28,19 @@ for (let nav of rightNavItems) {
   };
 }
 
-let activePages = (page) => {
+let activePages = (pageHash) => {
+  page = pageHash.substring(1);
   for (let eachPageElem of contentPages) {
     eachPageElem.classList.remove("active");
-    if (eachPageElem.id == page.substring(1)) {
+    if (eachPageElem.id == page) {
       eachPageElem.classList.add("active");
+    }
+  }
+  for (let navItem of rightNavItems) {
+    navItem.classList.remove("active");
+    let navName = navItem.getAttribute("href").substring(1);
+    if (page == navName) {
+      navItem.classList.add("active");
     }
   }
 };

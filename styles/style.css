@@ -21,11 +21,12 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background-color: hsla(0, 0%, 0%, 0.2);
 }
 
 .main-content {
-  height: 300px;
+  min-height: 550px;
+  height: auto;
   border-radius: 15px;
   background-color: rgba(201, 255, 164, 0.4);
   backdrop-filter: blur(5px);
@@ -88,6 +89,14 @@ body {
   padding-right: 0.2rem;
 }
 
+.right-nav.active {
+  color: hsl(103, 100%, 73%);
+  padding-right: 0.2rem;
+}
+
+.right-nav-ul li:hover.active {
+  color: #252935 !important;
+}
 .content-pages {
   display: none;
   padding-top: 2rem;
@@ -114,6 +123,5 @@ body {
 
   .main-content {
     width: 100%;
-    height: 2500px;
   }
 }
