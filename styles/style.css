@@ -29,6 +29,10 @@ img {
   -webkit-user-select: none;
 }
 
+p {
+  margin: 0.3rem 0;
+}
+
 .main-content {
   min-height: 550px;
   height: auto;
@@ -109,6 +113,44 @@ img {
 
 .content-pages.active {
   display: block;
+}
+
+/* list style   */
+
+.list-style {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.list-style li {
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.list-style li::before {
+  position: absolute;
+  content: "\2022";
+  color: var(--main-color);
+  font-size: 30px;
+  right: -20px;
+  top: -7px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+/* robbery table  */
+
+.robery-table {
+  width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  /* robbery table  */
+
+  .robery-table {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 992px) {
