@@ -131,6 +131,7 @@ p {
   position: absolute;
   content: "\2022";
   color: var(--main-color);
+  opacity: 0.7;
   font-size: 30px;
   right: -20px;
   top: -7px;
