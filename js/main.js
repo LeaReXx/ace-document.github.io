@@ -11,7 +11,6 @@ window.onload = () => {
 };
 
 humbugger.addEventListener("click", () => {
-
   rightMenu.classList.add("active");
 });
 
@@ -30,17 +29,25 @@ for (let nav of rightNavItems) {
 
 let activePages = (pageHash) => {
   page = pageHash.substring(1);
+  let activeNav;
   for (let eachPageElem of contentPages) {
     eachPageElem.classList.remove("active");
     if (eachPageElem.id == page) {
+      activeNav = page;
       eachPageElem.classList.add("active");
     }
   }
+
   for (let navItem of rightNavItems) {
     navItem.classList.remove("active");
     let navName = navItem.getAttribute("href").substring(1);
-    if (page == navName) {
+    if (activeNav == navName) {
       navItem.classList.add("active");
     }
+  }
+
+  if (!activeNav) {
+    activePages("#home");
+    location.hash = "home";
   }
 };
