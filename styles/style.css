@@ -90,6 +90,17 @@ p {
 .right-nav-ul li {
   transition: all 0.1s;
   opacity: 0.8;
+  position: relative;
+}
+.right-nav-ul li .badge {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.right-nav-ul li i {
+  vertical-align: middle;  
 }
 
 .right-nav-ul li:hover {
