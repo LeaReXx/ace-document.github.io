@@ -100,7 +100,7 @@ p {
 }
 
 .right-nav-ul li i {
-  vertical-align: middle;  
+  vertical-align: middle;
 }
 
 .right-nav-ul li:hover {
@@ -153,7 +153,8 @@ p {
 
 /* robbery table  */
 
-.robery-table {
+.robery-table,
+.commands-table {
   width: 100%;
   color: inherit !important;
 }
@@ -163,6 +164,10 @@ p {
 
   .robery-table {
     width: 70%;
+  }
+
+  .commands-table {
+    width: 80%;
   }
 }
 
